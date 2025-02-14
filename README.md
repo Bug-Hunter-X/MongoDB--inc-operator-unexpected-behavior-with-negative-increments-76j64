@@ -1,0 +1,3 @@
+# MongoDB $inc Operator Unexpected Behavior
+This example demonstrates an uncommon error related to the `$inc` operator in MongoDB. When using `$inc` to decrement a counter, it's crucial to consider how to handle the case where the counter value reaches zero or becomes negative. Incorrect handling can lead to data inconsistencies and application errors.
+The `bug.js` file showcases an example of this issue. The `bugSolution.js` file provides a solution to avoid unexpected negative values by using a conditional update that prevents decrementing below zero.  This robust approach ensures data integrity.
